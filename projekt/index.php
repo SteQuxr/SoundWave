@@ -480,7 +480,6 @@ $users = $stmt->fetchAll();
             <!-- Carousel wrapper -->
             <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                 <?php foreach ($users as $user): ?>
-                    <!-- jedyny js zrobiony samemu z całego projektu, bo a href tu nie działa-->
                     <div onclick="location.href='userProfile.php?id=<?= $user['user_id'] ?>'" class=" duration-700 ease-in-out" data-carousel-item>
 
                         <section class="bg-center bg-no-repeat bg-gray-700 bg-blend-multiply">
